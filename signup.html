@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+    <link rel="icon" href="images/logo.jpg" style="border-radius: 50%;">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        input{
+            border-color: darkviolet;
+            padding:8px;
+            border-radius: 50px;
+            border-width: 3px;
+            background-color: white;
+            
+        }
+        body{
+            background-image: url(https://cdn.pixabay.com/photo/2018/03/12/22/15/clothing-3221103_960_720.jpg);
+            background-size: cover;
+        }
+        tr{
+            font-weight: bolder;
+            color:black;
+            border: 2px solid dotted;
+        }
+      
+        h3{
+            margin-bottom:-20px;
+            color:rgb(68, 224, 235);
+            font-family:fantasy;
+            font-weight:lighter;
+            border: 2px dashed black;
+            margin:0px 600px 0px 650px
+        
+        }
+        button{
+            border-radius: 50px;
+            background-color: black;
+            cursor:pointer;
+            padding:10px;
+            color:white;
+            margin-left:250px;
+        }
+    fieldset{
+        background-image: radial-gradient(rgba(255, 192, 203,0),rgba(131, 150, 243, 0));
+            margin:20px 400px 0px 400px
+        }
+        #col{
+            color:red;
+        }
+        input:focus{
+            background-color: aquamarine;  
+           
+            font-family:'Times New Roman', Times, serif; 
+            font-weight: bold;
+       }
+       button:hover{
+           border-radius:10px;
+           border:2px solid white;
+           color:black;
+           background: cyan;
+
+
+       }
+       a{
+         color:black;
+         text-decoration: none;
+       }
+    </style>
+</head>
+<body align="center">
+    <nav>
+        <div class="row">
+            <div class="col-ms-1">
+                <a href="index.html"><img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSu7XFPBsIoTcXhv3WVjVtV8OTVT1-hCY7P4jhikxGfFO3samJd&usqp=CAU" height="70px" width="70px"></a>&nbsp;
+            </div>
+            <div class="col-ms-1">
+                <h1 style="color:goldenrod;margin:8px 0px 0px 2px;">Bangalore boutique</h1>
+            </div>
+            <div class="col-ms-10">
+                <ul align="right" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="western.html">Women's</a></li>
+                    <li><a href="cart.html">My Cart</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li id="selected"><a style="color:white;"  href="Signup.html">SignUp</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    <h3 align="center">SIGNUP</h3>
+    <div>
+        <fieldset>
+        <table align="center" cellspacing="15px" cellpadding="2px">
+        <tr align="left">
+            <td id="label">First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="text" placeholder="FirstName"></td>
+            <td id="label">Last Name</td>
+            <td><input type="text" placeholder="LastName"></td>
+        </tr>
+
+        <tr align="left" >
+            <td id="label">Contact</td>
+            <td><input type="number" placeholder="Phone Number"></td>
+            <td id="label">Confirm Number</td>
+            <td><input type="number" placeholder="Confirm Number"></td>
+        </tr>
+            <br>
+            <!-- color:rgb(163, 247, 9); -->
+        <tr align="left">
+            <td id="label">Email</td>
+            <td><input type="email" placeholder="Email"></td>
+            <td id="label">Confirm Email</td>
+            <td><input type="email" placeholder="Confirm Email"></td>
+        </tr>
+            <br>
+        <tr align="left">
+            <td id="label">Password &nbsp;</td>
+            <td><input type="password" placeholder="Password"></td>
+            <td id="label">Confirm Password &nbsp;&nbsp;</td>
+            <td><input type="password" placeholder="Confirm Password"></td>
+        </tr>
+    </table>
+    <h5 style="color:black;font-family:Georgia, 'Times New Roman', Times, serif;font-weight:bolder;">Address</h5><textarea placeholder="enter your address for pickup" cols="80" rows="4"></textarea>
+<button type="submit">SignUp</button>
+</fieldset>
+<div>
+    <h4 align="center" style="color:tomato;">Already Have an Account?<a href="login.html">LogIn here </a></h4>
+</div>
+</div>  

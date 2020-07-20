@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My cart</title>
+  <link rel="icon" href="images/logo.jpg" style="border-radius: 50%;">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    fieldset{
+        margin:-10px 400px 100px 500px;
+        padding:0px 100px -150px -100px;
+        border-radius: 50px 50px 50px 50px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color:white;
+
+    }
+    button{
+        border-radius: 50px;
+    background-color: cyan;
+    cursor:pointer;
+    }
+    fieldset{
+            border: 3px solid white;
+        }
+    body{
+        background-image: url(https://cdn.pixabay.com/photo/2015/10/12/15/18/clothing-store-984396_960_720.jpg);
+        background-size: cover;
+    }
+    input:focus{
+         background-color: aquamarine;  
+        
+         font-family:'Times New Roman', Times, serif; 
+         font-weight: bold;
+    }
+    button:hover{
+        border-radius: 6px;
+        font-size: 15px;
+      }
+      a{
+        color:yellow;
+        text-decoration: none;
+      }
+
+</style>
+</head>
+<body style="background-image: url(https://cdn.pixabay.com/photo/2015/10/12/15/18/clothing-store-984396_960_720.jpg);background-size:cover;">
+  <nav>
+    <div class="row">
+        <div class="col-ms-1">
+            <a href="index.html"><img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSu7XFPBsIoTcXhv3WVjVtV8OTVT1-hCY7P4jhikxGfFO3samJd&usqp=CAU" height="70px" width="70px"></a>&nbsp;
+        </div>
+        <div class="col-ms-1">
+            <h1 style="color:orange;margin:20px 0px 0px 2px;">Bangalore boutique</h1>
+        </div>
+        <div class="col-ms-10">
+          <ul align="right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="western.html">Women's</a></li>
+              <li><a id="selected" href="cart.html">My Cart</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+  <div align="center">
+    <h1 style="color:white;">Your designs added to the cart</h1>
+    <br>
+    <div class="row-below">
+      <a href="index.html"><button class="row-below" type="submit">Explore More Catalogues</button></a>
+    </div>
+  </div>
+  <main style="margin-top: 100px;">
+    <div align="center" id="div1">
+        <div id="title">
+                <h2 align="center" style="color:white;">LOGIN</h2>
+        </div>
+    
+            <form  align="center"><br>
+              <fieldset>
+                <br>
+                Username: <input  type="text" placeholder="enter your name" required><br>
+                    <br>
+                Password:<input type="password" placeholder="enter your password" required><br>
+                <br>
+                <button style="margin-left:20px;">LOGIN</button> 
+              </fieldset>
+            </form>
+            <h4 style="color:white">New Customer! Don't Have an Account?<a href="signup.html">Create Now </a></h4>
+
+    </div>
+</main>
+  
+</body>
+</html>
