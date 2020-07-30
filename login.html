@@ -73,12 +73,12 @@
                         <h2 align="center" style="color:black">LOGIN</h2>
                 </div>
             
-                    <form  align="center"><br>
+                    <form  align="center" action="index.html" onsubmit="return login()"><br>
                         <fieldset>
                         <br>
-                        Username: <input  type="text" placeholder="enter your name" required><br>
+                        Username: <input id="username" type="text" placeholder="enter your name" required><br>
                             <br>
-                        Password:<input type="password" placeholder="enter your password" required><br>
+                        Password:<input id="pwd" type="password" placeholder="enter your password" required><br>
                             <br>
                         <button align="center">LOGIN</button>
                         </fieldset>
@@ -87,5 +87,7 @@
 
             </div>
         </main>
+        <script src="js/script.js"></script>
+
 </body>
 </html>

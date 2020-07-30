@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment page</title>
+  <style>
+    
+
+body{
+  background-color: black;
+}
+h1{
+  color: white;
+  text-align: center;
+}
+form{
+  width: 350px;
+  margin: 0 auto;
+}
+  .half input{
+      width: 165px;
+      
+      float: right;
+      margin-right: 20px;
+      margin-left:20px;
+  }
+  input, button{
+    box-sizing: border-box;
+    display: block;
+    margin-left:500px;
+    float: left;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+  }
+  input{
+    color: dark-gray;
+    border:2px solid blue;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  button{
+    color: dark-gray;
+    background: white;
+    font-weight: bold;
+    border: 2px solid blue;
+    margin-left:600px;
+    padding:10px;
+  }
+  </style>
+</head>
+<body align="center">
+  <h1> Payment </h1>
+    <input type="text" placeholder="Card number">
+    <input type="text" placeholder="Name on card">
+
+    <div class="half">
+      <input type="text" placeholder="MM/YY">
+      <input type="text" placeholder="CVC">
+    </div>
+    <button type="submit"> Pay Now </button>
+    
+</body>
+</html>

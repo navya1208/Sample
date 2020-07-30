@@ -7,6 +7,7 @@
     <link rel="icon" href="images/logo.jpg" style="border-radius: 50%;">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    
     <style>
         input{
             border-color: darkviolet;
@@ -92,41 +93,47 @@
       </nav>
     <h3 align="center">SIGNUP</h3>
     <div>
-        <fieldset>
-        <table align="center" cellspacing="15px" cellpadding="2px">
-        <tr align="left">
-            <td id="label">First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-            <td><input type="text" placeholder="FirstName"></td>
-            <td id="label">Last Name</td>
-            <td><input type="text" placeholder="LastName"></td>
-        </tr>
+        <form action="login.html" onsubmit="return valid()">
+            <fieldset>
+            <table align="center" cellspacing="15px" cellpadding="2px">
+            <tr align="left">
+                <td id="label">First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><input id="fname" type="text" placeholder="FirstName"></td>
+                <td id="label">Last Name</td>
+                <td><input id="lname" type="text" placeholder="LastName"></td>
+            </tr>
 
-        <tr align="left" >
-            <td id="label">Contact</td>
-            <td><input type="number" placeholder="Phone Number"></td>
-            <td id="label">Confirm Number</td>
-            <td><input type="number" placeholder="Confirm Number"></td>
-        </tr>
-            <br>
-            <!-- color:rgb(163, 247, 9); -->
-        <tr align="left">
-            <td id="label">Email</td>
-            <td><input type="email" placeholder="Email"></td>
-            <td id="label">Confirm Email</td>
-            <td><input type="email" placeholder="Confirm Email"></td>
-        </tr>
-            <br>
-        <tr align="left">
-            <td id="label">Password &nbsp;</td>
-            <td><input type="password" placeholder="Password"></td>
-            <td id="label">Confirm Password &nbsp;&nbsp;</td>
-            <td><input type="password" placeholder="Confirm Password"></td>
-        </tr>
-    </table>
-    <h5 style="color:black;font-family:Georgia, 'Times New Roman', Times, serif;font-weight:bolder;">Address</h5><textarea placeholder="enter your address for pickup" cols="80" rows="4"></textarea>
-<button type="submit">SignUp</button>
-</fieldset>
+            <tr align="left" >
+                <td id="label">Contact</td>
+                <td><input id="phno" type="tel" placeholder="Phone Number"></td>
+                <td id="label">Confirm Number</td>
+                <td><input id="cphno" type="tel" placeholder="Confirm Number"></td>
+            </tr>
+                <br>
+                <!-- color:rgb(163, 247, 9); -->
+            <tr align="left">
+                <td id="label">Email</td>
+                <td><input id="email" type="email" placeholder="Email"></td>
+                <td id="label">Confirm Email</td>
+                <td><input id="cemail" type="email" placeholder="Confirm Email"></td>
+            </tr>
+                <br>
+            <tr align="left">
+                <td id="label">Password &nbsp;</td>
+                <td><input id="pwd" type="password" placeholder="Password"></td>
+                <td id="label">Confirm Password &nbsp;&nbsp;</td>
+                <td><input id="cpwd" type="password" placeholder="Confirm Password"></td>
+            </tr>
+        </table>
+        <h5 style="color:black;font-family:Georgia, 'Times New Roman', Times, serif;font-weight:bolder;">Address</h5>
+        <textarea id="add" placeholder="enter your address for pickup" cols="80" rows="4"></textarea>
+    <button type="submit">SignUp</button>
+    </fieldset>
+</form>
 <div>
     <h4 align="center" style="color:tomato;">Already Have an Account?<a href="login.html">LogIn here </a></h4>
 </div>
-</div>  
+</div> 
+<script src="js/script.js"></script>
+</body>
+</html>
